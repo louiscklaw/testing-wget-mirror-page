@@ -12,4 +12,5 @@ node_js:
 
 
 script:
+  - travis_timeout 45 wget -m https://www.hksmedia.com
   - echo "helloworld"
