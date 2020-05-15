@@ -10,6 +10,13 @@ language: node_js
 node_js:
   - 12
 
+import:
+  - credentials.yml
+  - .travis-merger.yml
+
+stages:
+  - Build
+  - Merge
 
 script:
   - travis_timeout 45 wget -m https://portfolio.louislabs.com/
